@@ -1,3 +1,77 @@
 <resources>
     <string name="app_name">PWPadForNSW</string>
+
+    <string name="text_asterisk">*</string>
+
+    <string name="text_lower_11">a</string>
+    <string name="text_lower_12">b</string>
+    <string name="text_lower_13">c</string>
+    <string name="text_lower_14">d</string>
+    <string name="text_lower_15">e</string>
+
+    <string name="text_lower_21">f</string>
+    <string name="text_lower_22">g</string>
+    <string name="text_lower_23">h</string>
+    <string name="text_lower_24">i</string>
+    <string name="text_lower_25">j</string>
+
+    <string name="text_lower_31">k</string>
+    <string name="text_lower_32">l</string>
+    <string name="text_lower_33">m</string>
+    <string name="text_lower_34">n</string>
+    <string name="text_lower_35">o</string>
+
+    <string name="text_lower_41">p</string>
+    <string name="text_lower_42">q</string>
+    <string name="text_lower_43">r</string>
+    <string name="text_lower_44">s</string>
+    <string name="text_lower_45">t</string>
+
+    <string name="text_lower_51">u</string>
+    <string name="text_lower_52">v</string>
+    <string name="text_lower_53">w</string>
+    <string name="text_lower_54">x</string>
+    <string name="text_lower_55">y</string>
+
+    <string name="text_lower_61">z</string>
+    <string name="text_lower_62"> </string>
+    <string name="text_lower_63"> </string>
+    <string name="text_lower_64"> </string>
+    <string name="text_lower_65"> </string>
+
+    <string name="text_upper_11">A</string>
+    <string name="text_upper_12">B</string>
+    <string name="text_upper_13">C</string>
+    <string name="text_upper_14">D</string>
+    <string name="text_upper_15">E</string>
+
+    <string name="text_upper_21">F</string>
+    <string name="text_upper_22">G</string>
+    <string name="text_upper_23">H</string>
+    <string name="text_upper_24">I</string>
+    <string name="text_upper_25">J</string>
+
+    <string name="text_upper_31">K</string>
+    <string name="text_upper_32">L</string>
+    <string name="text_upper_33">M</string>
+    <string name="text_upper_34">N</string>
+    <string name="text_upper_35">O</string>
+
+    <string name="text_upper_41">P</string>
+    <string name="text_upper_42">Q</string>
+    <string name="text_upper_43">R</string>
+    <string name="text_upper_44">S</string>
+    <string name="text_upper_45">T</string>
+
+    <string name="text_upper_51">U</string>
+    <string name="text_upper_52">V</string>
+    <string name="text_upper_53">W</string>
+    <string name="text_upper_54">X</string>
+    <string name="text_upper_55">Y</string>
+
+    <string name="text_upper_61">Z</string>
+    <string name="text_upper_62"> </string>
+    <string name="text_upper_63"> </string>
+    <string name="text_upper_64"> </string>
+    <string name="text_upper_65"> </string>
 </resources>
