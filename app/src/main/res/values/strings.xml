@@ -34,10 +34,10 @@
     <string name="text_lower_55">y</string>
 
     <string name="text_lower_61">z</string>
-    <string name="text_lower_62"> </string>
-    <string name="text_lower_63"> </string>
-    <string name="text_lower_64"> </string>
-    <string name="text_lower_65"> </string>
+    <string name="text_lower_62">,</string>
+    <string name="text_lower_63">.</string>
+    <string name="text_lower_64">-</string>
+    <string name="text_lower_65">/</string>
 
     <string name="text_upper_11">A</string>
     <string name="text_upper_12">B</string>
@@ -70,8 +70,81 @@
     <string name="text_upper_55">Y</string>
 
     <string name="text_upper_61">Z</string>
-    <string name="text_upper_62"> </string>
-    <string name="text_upper_63"> </string>
-    <string name="text_upper_64"> </string>
-    <string name="text_upper_65"> </string>
+    <string name="text_upper_62">*</string>
+    <string name="text_upper_63">#</string>
+    <string name="text_upper_64">!</string>
+    <string name="text_upper_65">\?</string>
+
+    <string name="text_special1_11">1</string>
+    <string name="text_special1_12">2</string>
+    <string name="text_special1_13">3</string>
+    <string name="text_special1_14">4</string>
+    <string name="text_special1_15">5</string>
+
+    <string name="text_special1_21">6</string>
+    <string name="text_special1_22">7</string>
+    <string name="text_special1_23">8</string>
+    <string name="text_special1_24">9</string>
+    <string name="text_special1_25">0</string>
+
+    <string name="text_special1_31">!</string>
+    <string name="text_special1_32">\@</string>
+    <string name="text_special1_33">#</string>
+    <string name="text_special1_34">$</string>
+    <string name="text_special1_35">%</string>
+
+    <string name="text_special1_41">^</string>
+    <string name="text_special1_42">&amp;</string>
+    <string name="text_special1_43">*</string>
+    <string name="text_special1_44">(</string>
+    <string name="text_special1_45">)</string>
+
+    <string name="text_special1_51">~</string>
+    <string name="text_special1_52">`</string>
+    <string name="text_special1_53">=</string>
+    <string name="text_special1_54">\\</string>
+    <string name="text_special1_55">+</string>
+
+    <string name="text_special1_61">-</string>
+    <string name="text_special1_62">_</string>
+    <string name="text_special1_63"> </string>
+    <string name="text_special1_64"> </string>
+    <string name="text_special1_65"> </string>
+
+    <string name="text_special2_11">1</string>
+    <string name="text_special2_12">2</string>
+    <string name="text_special2_13">3</string>
+    <string name="text_special2_14">4</string>
+    <string name="text_special2_15">5</string>
+
+    <string name="text_special2_21">6</string>
+    <string name="text_special2_22">7</string>
+    <string name="text_special2_23">8</string>
+    <string name="text_special2_24">9</string>
+    <string name="text_special2_25">0</string>
+
+    <string name="text_special2_31">{</string>
+    <string name="text_special2_32">}</string>
+    <string name="text_special2_33">|</string>
+    <string name="text_special2_34">[</string>
+    <string name="text_special2_35">]</string>
+
+    <string name="text_special2_41">&lt;</string>
+    <string name="text_special2_42">&gt;</string>
+    <string name="text_special2_43">;</string>
+    <string name="text_special2_44">:</string>
+    <string name="text_special2_45">"</string>
+
+    <string name="text_special2_51">\'</string>
+    <string name="text_special2_52">,</string>
+    <string name="text_special2_53">.</string>
+    <string name="text_special2_54">\?</string>
+    <string name="text_special2_55">/</string>
+
+    <string name="text_special2_61">-</string>
+    <string name="text_special2_62">_</string>
+    <string name="text_special2_63"> </string>
+    <string name="text_special2_64"> </string>
+    <string name="text_special2_65"> </string>
+
 </resources>
