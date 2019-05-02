@@ -34,6 +34,12 @@
                 android:text=""
                 android:textSize="30sp"/>
 
+            <Button
+                android:id="@+id/button_connect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connect" />
+
         </LinearLayout>
 
         <TableLayout
@@ -187,12 +193,12 @@
                 android:gravity="center">
 
                 <TextView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:text="@string/text_lower_41"
-                android:textAlignment="center"
-                android:textSize="30sp"
-                android:id="@+id/button41" />
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="@string/text_lower_41"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:id="@+id/button41" />
 
                 <TextView
                     android:layout_width="50dp"

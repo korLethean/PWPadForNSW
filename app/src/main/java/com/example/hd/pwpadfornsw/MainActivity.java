@@ -4,8 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -22,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     private String read;
     private char command;
 
+    private Button btnConnect;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,40 +33,31 @@ public class MainActivity extends AppCompatActivity {
 
         handler = new Handler();
 
+        btnConnect = (Button) findViewById(R.id.button_connect);
+        btnConnect.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                connectClickEvent(v);
+            }
+        });
+    }
+
+    void connectClickEvent(View v) {
         new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
                     serverSocket = new ServerSocket(PORT);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-
-                try {
                     socket = serverSocket.accept();
                     inputStream = new DataInputStream(socket.getInputStream());
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                        }
-                    });
+
+                    while(true){
+                        read = inputStream.readUTF();
+                        command = read.charAt(0);
+                        control();
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
-
-                while (true) {
-                    try {
-                        read = inputStream.readUTF();
-                        handler.post(new Runnable() {
-                            @Override
-                            public void run() {
-                                command = read.charAt(0);
-                                control();
-                            }
-                        });
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
                 }
             }
         }).start();
