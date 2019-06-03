@@ -11,9 +11,14 @@ import android.widget.TextView;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.Collections;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private String read;
 
     private TextView userPassword;
+    private TextView textIP;
     private Button btnConnect;
     private Button btnToggle;
     private Button btnClear;
@@ -111,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         userPassword = (TextView) findViewById(R.id.passwordText);
+        textIP = (TextView) findViewById(R.id.ipText);
 
         text11 = (TextView) findViewById(R.id.text11);
         text12 = (TextView) findViewById(R.id.text12);
@@ -144,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
         text65 = (TextView) findViewById(R.id.text65);
 
         changeKeyboard();
+        getIP();
     }
 
     void connectClickEvent() {
@@ -436,6 +444,22 @@ public class MainActivity extends AppCompatActivity {
             key[5][2] = ' ';
             key[5][3] = ' ';
             key[5][4] = ' ';
+        }
+    }
+
+    private void getIP() {
+        try {
+            for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();) {
+                NetworkInterface intf = en.nextElement();
+                for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements();) {
+                    InetAddress inetAddress = enumIpAddr.nextElement();
+                    if (!inetAddress.isLoopbackAddress() && inetAddress instanceof Inet4Address) {
+                        textIP.setText(inetAddress.getHostAddress());
+                    }
+                }
+            }
+        } catch (SocketException ex) {
+            ex.printStackTrace();
         }
     }
 

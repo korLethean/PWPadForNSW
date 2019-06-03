@@ -21,11 +21,12 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/ipText"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
-                android:text="Account Password"
-                android:textSize="30sp"
-                android:textAlignment="center"/>
+                android:text="Device IP"
+                android:textAlignment="center"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/passwordText"
@@ -34,11 +35,31 @@
                 android:text=""
                 android:textSize="30sp"/>
 
-            <Button
-                android:id="@+id/button_connect"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Connect" />
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button_connect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect" />
+
+                <Button
+                    android:id="@+id/button_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Password" />
+
+                <Button
+                    android:id="@+id/button_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clear" />
+
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -58,7 +79,7 @@
                     android:text="@string/text_lower_11"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button11" />
+                    android:id="@+id/text11" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -66,7 +87,7 @@
                     android:text="@string/text_lower_12"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button12"/>
+                    android:id="@+id/text12"/>
 
                 <TextView
                     android:layout_width="50dp"
@@ -74,7 +95,7 @@
                     android:text="@string/text_lower_13"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button13" />
+                    android:id="@+id/text13" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -82,7 +103,7 @@
                     android:text="@string/text_lower_14"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button14" />
+                    android:id="@+id/text14" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -90,7 +111,7 @@
                     android:text="@string/text_lower_15"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button15" />
+                    android:id="@+id/text15" />
 
             </TableRow>
 
@@ -105,7 +126,7 @@
                     android:text="@string/text_lower_21"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button21" />
+                    android:id="@+id/text21" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -113,7 +134,7 @@
                     android:text="@string/text_lower_22"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button22" />
+                    android:id="@+id/text22" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -121,7 +142,7 @@
                     android:text="@string/text_lower_23"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button23" />
+                    android:id="@+id/text23" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -129,7 +150,7 @@
                     android:text="@string/text_lower_24"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button24" />
+                    android:id="@+id/text24" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -137,7 +158,7 @@
                     android:text="@string/text_lower_25"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button25" />
+                    android:id="@+id/text25" />
 
             </TableRow>
 
@@ -152,7 +173,7 @@
                     android:text="@string/text_lower_31"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button31" />
+                    android:id="@+id/text31" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -160,7 +181,7 @@
                     android:text="@string/text_lower_32"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button32" />
+                    android:id="@+id/text32" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -168,7 +189,7 @@
                     android:text="@string/text_lower_33"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button33" />
+                    android:id="@+id/text33" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -176,7 +197,7 @@
                     android:text="@string/text_lower_34"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button34" />
+                    android:id="@+id/text34" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -184,7 +205,7 @@
                     android:text="@string/text_lower_35"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button35" />
+                    android:id="@+id/text35" />
             </TableRow>
 
             <TableRow
@@ -198,7 +219,7 @@
                     android:text="@string/text_lower_41"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button41" />
+                    android:id="@+id/text41" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -206,7 +227,7 @@
                     android:text="@string/text_lower_42"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button42" />
+                    android:id="@+id/text42" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -214,7 +235,7 @@
                     android:text="@string/text_lower_43"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button43" />
+                    android:id="@+id/text43" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -222,7 +243,7 @@
                     android:text="@string/text_lower_44"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button44" />
+                    android:id="@+id/text44" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -230,7 +251,7 @@
                     android:text="@string/text_lower_45"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button45" />
+                    android:id="@+id/text45" />
             </TableRow>
 
             <TableRow
@@ -244,7 +265,7 @@
                     android:text="@string/text_lower_51"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button51" />
+                    android:id="@+id/text51" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -252,21 +273,21 @@
                     android:text="@string/text_lower_52"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button52" />
+                    android:id="@+id/text52" />
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="@string/text_lower_53"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button53" />
+                    android:id="@+id/text53" />
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:text="@string/text_lower_54"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button54" />
+                    android:id="@+id/text54" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -274,7 +295,7 @@
                     android:text="@string/text_lower_55"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button55" />
+                    android:id="@+id/text55" />
             </TableRow>
 
             <TableRow
@@ -288,7 +309,7 @@
                     android:text="@string/text_lower_61"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button61" />
+                    android:id="@+id/text61" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -296,7 +317,7 @@
                     android:text="@string/text_lower_62"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button62" />
+                    android:id="@+id/text62" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -304,7 +325,7 @@
                     android:text="@string/text_lower_63"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button63" />
+                    android:id="@+id/text63" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -312,7 +333,7 @@
                     android:text="@string/text_lower_64"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button64" />
+                    android:id="@+id/text64" />
 
                 <TextView
                     android:layout_width="50dp"
@@ -320,7 +341,7 @@
                     android:text="@string/text_lower_65"
                     android:textAlignment="center"
                     android:textSize="30sp"
-                    android:id="@+id/button65" />
+                    android:id="@+id/text65" />
             </TableRow>
         </TableLayout>
     </LinearLayout>
